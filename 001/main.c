@@ -23,7 +23,7 @@ int main(void) {
     for (i = 1; i < 1000; i++){
         result += (((i % 3) == 0) || ((i % 5) == 0)) ? i : 0;
     }
-    printf ("Result: %i\n",result);
+    printf ("Answer: %i\n",result);
     return 0;
 }
 

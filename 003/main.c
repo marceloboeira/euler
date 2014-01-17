@@ -27,7 +27,7 @@ long int pfact(long long int n) {
 }
 
 int main(void) {
-    pfact(600851475143);
+    printf("Answer: %i\n",pfact(600851475143)); 
     return 0;
 }
 

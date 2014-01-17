@@ -36,7 +36,7 @@ int main(void) {
         t = fb(i);
         result += ((t % 2) == 0) ? t : 0;
     }
-    printf("Result: %i\n",(result));    
+    printf("Answer: %i\n",(result));    
     return 0;
 }
 
