@@ -31,7 +31,5 @@ int main(void) {
     }
     l = (k*k) - j;        
     printf("Answer: %i\n",l); 
-    system("pause");
     return 0;
 }
-
