@@ -19,7 +19,7 @@ long int pfact(long long int n) {
     for (i = 2; i <= n; i++)  {
         if ((n % i) == 0) {
            temp = i;
-           n = n/ i;           
+           n /= i;           
            i = 1;
         }    
     }
