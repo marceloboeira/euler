@@ -42,7 +42,6 @@ int main(void) {
     }
     
     printf("Answer: %i\n",r);
-    system("pause");
     return 0;
 }
 
