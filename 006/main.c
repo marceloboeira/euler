@@ -4,6 +4,7 @@
  * @see http://projecteuler.net/problem=6
  * @see http://blog.marceloboeira.com/euler/challenge-006
  *
+ *
  * The sum of the squares of the first ten natural numbers is,
  *
  * 1² + 2² + ... + 10² = 385

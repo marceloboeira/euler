@@ -15,8 +15,6 @@
  *
  *
  */
-
-
 #include <stdio.h>
 
 int fb(int n){
@@ -26,17 +24,15 @@ int fb(int n){
         return fb(n - 1) + fb(n - 2);
 }
 
-
 int main(void) {
-    
     int i = 0;
-    long int result = 0;
+    long int r = 0;
     long int t = 0;
-    for (i = 2; result <= 4000000; i++){
+    for (i = 2; r <= 4000000; i++){
         t = fb(i);
-        result += ((t % 2) == 0) ? t : 0;
+        r += ((t % 2) == 0) ? t : 0;
     }
-    printf("Answer: %i\n",(result));    
+    printf("Answer: %i\n",r);    
     return 0;
 }
 

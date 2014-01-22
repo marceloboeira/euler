@@ -4,6 +4,7 @@
  * @see http://projecteuler.net/problem=9
  * @see http://blog.marceloboeira.com/euler/challenge-009
  *
+ *
  * A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
  * a² + b² = c²
  * For example, 3² + 4² = 9 + 16 = 25 = 5².
