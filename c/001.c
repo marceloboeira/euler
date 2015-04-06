@@ -2,8 +2,7 @@
  * Euler Challenge 001
  *
  * @see http://projecteuler.net/problem=1
- * @see http://blog.marceloboeira.com/euler/challenge-001
- *
+ * @see http://blog.marceloboeira.com/euler-challenge-001
  *
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
  * The sum of these multiples is 23.
@@ -11,17 +10,15 @@
  *
  * Answer: 233168
  *
- *
  */
 #include <stdio.h>
 
 int main(void) {
-    int r = 0;
-    int i = 1;
-    for (i = 1; i < 1000; i++){
-        r += (((i % 3) == 0) || ((i % 5) == 0)) ? i : 0;
-    }
-    printf ("Answer: %i\n",r);
-    return 0;
+  int r = 0;
+  int i = 1;
+  for (i = 1; i < 1000; i++){
+    r += (((i % 3) == 0) || ((i % 5) == 0)) ? i : 0;
+  }
+  printf ("Answer: %i\n",r);
+  return 0;
 }
-

@@ -4,7 +4,6 @@
  * @see http://projecteuler.net/problem=6
  * @see http://blog.marceloboeira.com/euler/challenge-006
  *
- *
  * The sum of the squares of the first ten natural numbers is,
  *
  * 1² + 2² + ... + 10² = 385
@@ -19,18 +18,17 @@
  *
  * Answer: 232792560
  *
- *
  */
 #include <stdio.h>
 
 int main(void) {
-    int i = 1;
-    long int j = 0, k = 0, l = 0;
-    for (i = 1; i<= 100; i++) {
-        j += (i*i);
-        k += i;    
-    }
-    l = (k*k) - j;        
-    printf("Answer: %i\n",l); 
-    return 0;
+  int i = 1;
+  long int j = 0, k = 0, l = 0;
+  for (i = 1; i<= 100; i++) {
+    j += (i*i);
+    k += i;    
+  }
+  l = (k*k) - j;        
+  printf("Answer: %i\n",l); 
+  return 0;
 }

@@ -21,21 +21,20 @@
  *
  * Answer: 5777
  *
- *
  */
  
 #include <stdio.h>
 
 // Verify if is a prime number
 int isp(int n ){
-    int i = 3;    
-    if (n == 2) return 1;
-    if ((n % 2) == 0) return 0;
-    while (i < sqrt(n)+1) { 
-      if((n % i)==0) return 0;
-      i+= 2;
-    }
-    return 1;
+  int i = 3;    
+  if (n == 2) return 1;
+  if ((n % 2) == 0) return 0;
+  while (i < sqrt(n)+1) { 
+    if((n % i)==0) return 0;
+    i+= 2;
+  }
+  return 1;
 }
 
 // Verify if is odd composite number
@@ -45,27 +44,27 @@ short int isoc(int n){
 
 // Verify Christian's conjecture
 short int iscg(int n){
-     int j = 0, l = 0;
-     for (j = 1; j < n; j+=2) {
-         if (isp(j)) {
-             for (l = 1; l < n; l++){
-                 if ((n == (j + (2*(l*l))))) {
-                    return 1;
-                 }              
-             }
-         }
-     }      
-     return 0;
+  int j = 0, l = 0;
+  for (j = 1; j < n; j+=2) {
+    if (isp(j)) {
+      for (l = 1; l < n; l++){
+        if ((n == (j + (2*(l*l))))) {
+         return 1;
+        }              
+      }
+    }
+  }      
+  return 0;
 }
 
 int main(void) {
-    int i = 1;
-    short int f = 0;
-    while (!f){
-        i+=2;
-        f = (isoc(i) && !iscg(i));
-    }
-    printf("Answer: %i\n",i);
-    return 0;
+  int i = 1;
+  short int f = 0;
+  while (!f){
+    i+=2;
+    f = (isoc(i) && !iscg(i));
+  }
+  printf("Answer: %i\n",i);
+  return 0;
 }
 

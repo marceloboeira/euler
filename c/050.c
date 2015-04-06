@@ -3,7 +3,6 @@
  *
  * @see http://projecteuler.net/problem=50
  * @see http://blog.marceloboeira.com/euler/challenge-050
- * 
  *
  * The prime 41, can be written as the sum of six consecutive primes:
  *
@@ -14,10 +13,7 @@
  * 
  * Which prime, below one-million, can be written as the sum of the most consecutive primes?
  * 
- * 
- *
  * Answer: 997651
- *
  *
  */
  
@@ -36,36 +32,34 @@ int isp(int n ){
 }
 
 int main(void) {
-    int i = 1, j = 0, l = 0, m = 0, o = 0, p = 0;
-    short int f = 0;
-    
-    for (i = 1 ;i <= 1000000; i+=2) {
-        if (isp(i)) {
-           f = 0;
-           int h = 0;
-           for (h = 2; (h < i) && (!f); h++) {
-               l = 0;
-               m = 0;
-               if (isp(h)) {
-                  for (j = h; (l < i) && (!f) ; j++) {
-                      if (isp(j) && !f) {
-                         l += j;
-                         m++;
-                         f = (i == l);   
-                       }
-                  }
-               }
-               if (f) {
-                 if ( (m) >= o ) {
-                    o = (m);
-                    p = i;
-                  }     
-               }
-                        
-           }
+  int i = 1, j = 0, l = 0, m = 0, o = 0, p = 0;
+  short int f = 0;
+  for (i = 1 ;i <= 1000000; i+=2) {
+    if (isp(i)) {
+      f = 0;
+      int h = 0;
+      for (h = 2; (h < i) && (!f); h++) {
+        l = 0;
+        m = 0;
+        if (isp(h)) {
+          for (j = h; (l < i) && (!f) ; j++) {
+            if (isp(j) && !f) {
+              l += j;
+              m++;
+              f = (i == l);   
+            }
+          }
         }
+        if (f) {
+          if (m >= o) {
+            o = (m);
+            p = i;
+          }     
+        }
+      }
     }
-    printf("Answer: %i | %i \n",p,o);
-    return p;
+  }
+  printf("Answer: %i | %i \n",p,o);
+  return p;
 }
 
