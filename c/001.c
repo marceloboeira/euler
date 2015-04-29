@@ -1,24 +1,19 @@
 /**
- * Euler Challenge 001
- *
- * @see http://projecteuler.net/problem=1
- * @see http://blog.marceloboeira.com/euler-challenge-001
+ * Project Euler: Challenge 001 - http://projecteuler.net/problem=1
  *
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
  * The sum of these multiples is 23.
  * Find the sum of all the multiples of 3 or 5 below 1000.
  *
  * Answer: 233168
- *
  */
 #include <stdio.h>
 
 int main(void) {
-  int r = 0;
-  int i = 1;
-  for (i = 1; i < 1000; i++){
+  int r = 0, i = 1;
+  for (i = 1; i < 1000; i++) {
     r += (((i % 3) == 0) || ((i % 5) == 0)) ? i : 0;
   }
-  printf ("Answer: %i\n",r);
+  printf ("%i\n", r);
   return 0;
 }

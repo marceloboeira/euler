@@ -1,14 +1,10 @@
 /**
- * Euler Challenge 005
- *
- * @see http://projecteuler.net/problem=5
- * @see http://blog.marceloboeira.com/euler/challenge-005
+ * Project Euler: Challenge 005 - http://projecteuler.net/problem=5
  *
  * 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
  * What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
  *
  * Answer: 232792560
- *
  */
 #include <stdio.h>
 #include <stdbool.h>
@@ -25,7 +21,7 @@ int main(void) {
       j++;
     }
   }
-  printf("Answer: %i\n",i); 
+  printf("%i\n", i); 
   return 0;
 }
 

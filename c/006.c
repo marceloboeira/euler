@@ -1,8 +1,5 @@
 /**
- * Euler Challenge 006
- *
- * @see http://projecteuler.net/problem=6
- * @see http://blog.marceloboeira.com/euler/challenge-006
+ * Project Euler: Challenge 006 - http://projecteuler.net/problem=6
  *
  * The sum of the squares of the first ten natural numbers is,
  *
@@ -17,7 +14,6 @@
  * of the first one hundred natural numbers and the square of the sum.
  *
  * Answer: 232792560
- *
  */
 #include <stdio.h>
 

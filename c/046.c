@@ -1,9 +1,5 @@
 /**
- * Euler Challenge 046
- *
- * @see http://projecteuler.net/problem=46
- * @see http://blog.marceloboeira.com/euler/challenge-046
- * 
+ * Project Euler: Challenge 046 - http://projecteuler.net/problem=46
  *
  * It was proposed by Christian Goldbach that every odd composite number can be written 
  * as the sum of a prime and twice a square.
@@ -20,9 +16,7 @@
  * What is the smallest odd composite that cannot be written as the sum of a prime and twice a square?
  *
  * Answer: 5777
- *
  */
- 
 #include <stdio.h>
 
 // Verify if is a prime number
@@ -39,7 +33,7 @@ int isp(int n ){
 
 // Verify if is odd composite number
 short int isoc(int n){
-    return (((n % 2) != 0) && !isp(n)); 
+  return (((n % 2) != 0) && !isp(n)); 
 }
 
 // Verify Christian's conjecture
@@ -50,7 +44,7 @@ short int iscg(int n){
       for (l = 1; l < n; l++){
         if ((n == (j + (2*(l*l))))) {
          return 1;
-        }              
+        }
       }
     }
   }      
@@ -61,10 +55,10 @@ int main(void) {
   int i = 1;
   short int f = 0;
   while (!f){
-    i+=2;
+    i += 2;
     f = (isoc(i) && !iscg(i));
   }
-  printf("Answer: %i\n",i);
+  printf("%i\n", i);
   return 0;
 }
 

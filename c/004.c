@@ -1,15 +1,11 @@
 /**
- * Euler Challenge 004
- *
- * @see http://projecteuler.net/problem=4
- * @see http://blog.marceloboeira.com/euler/challenge-004
+ * Project Euler: Challenge 004 - http://projecteuler.net/problem=4
  *
  * A palindromic number reads the same both ways. 
  * The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
  * Find the largest palindrome made from the product of two 3-digit numbers.
  * 
  * Answer: 906609
- *
  */ 
 #include <stdio.h>
 #include <stdbool.h>
@@ -31,7 +27,7 @@ int main(void) {
       k = (isp(l)) && (l > k) ? l : k;
     }
   }    
-  printf("Answer: %i\n",k);
+  printf("%i\n", k);
   return 0;
 }
 

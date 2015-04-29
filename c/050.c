@@ -1,8 +1,5 @@
 /**
- * Euler Challenge 050 ** (BUG - Takes VERY VERY LONG too solve!)
- *
- * @see http://projecteuler.net/problem=50
- * @see http://blog.marceloboeira.com/euler/challenge-050
+ * Project Euler: Challenge 050 - http://projecteuler.net/problem=50
  *
  * The prime 41, can be written as the sum of six consecutive primes:
  *
@@ -14,21 +11,20 @@
  * Which prime, below one-million, can be written as the sum of the most consecutive primes?
  * 
  * Answer: 997651
- *
  */
- 
 #include <stdio.h>
+#include <math.h>
 
 // Verify if is a prime number
-int isp(int n ){
-    int i = 3;    
-    if (n == 2) return 1;
-    if ((n % 2) == 0) return 0;
-    while (i < sqrt(n)+1) { 
-      if((n % i)==0) return 0;
-      i+= 2;
-    }
-    return 1;
+int isp(int n){
+  int i = 3;    
+  if (n == 2) return 1;
+  if ((n % 2) == 0) return 0;
+  while (i < sqrt(n) + 1) { 
+    if((n % i)==0) return 0;
+    i += 2;
+  }
+  return 1;
 }
 
 int main(void) {
@@ -59,7 +55,7 @@ int main(void) {
       }
     }
   }
-  printf("Answer: %i | %i \n",p,o);
-  return p;
+  printf("%i | %i \n", p, o);
+  return 0;
 }
 
