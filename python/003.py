@@ -12,6 +12,6 @@ for i in range(2, n):
 		break
 
 	if n % i == 0:
-		temp, n = i, n / i
+		largest_prime, n = i, n / i
 
-print(temp)
+print(largest_prime)
