@@ -12,14 +12,11 @@ def fb(n)
   ((n == 1) || (n == 2)) ? 1 : fb(n - 1) + fb(n - 2);
 end
 
-def calculate(n)
-  i, r, t, = 2, 0, 0;
-  while (r <= n) do
-    i += 1
-    t = fb(i)
-    r += ((t % 2) == 0) ? t : 0
-  end
-  puts r
+i, r, t, = 2, 0, 0;
+while (r <= 4000000) do
+  i += 1
+  t = fb(i)
+  r += ((t % 2) == 0) ? t : 0
 end
 
-calculate(4000000)
+p r
