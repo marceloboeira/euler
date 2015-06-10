@@ -8,10 +8,8 @@
 n = 600851475143
 
 for i in range(2, n):
-	if n <= 1:
-		break
-
-	if n % i == 0:
-		largest_prime, n = i, n / i
+    if n <= 1: break
+    elif n % i == 0:
+        largest_prime, n = i, n / i
 
 print(largest_prime)
