@@ -1,4 +1,4 @@
-require 'matrix'
+require "matrix"
 
 GROUP_SIZE = 4
 
