@@ -1,4 +1,3 @@
-#
 # Project Euler: Challenge 004 - http://projecteuler.net/problem=4
 #
 # A palindromic number reads the same both ways. 
