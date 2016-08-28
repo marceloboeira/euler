@@ -1,7 +1,7 @@
 /**
  * Project Euler: Challenge 003 - http://projecteuler.net/problem=3
- * 
- * The prime factors of 13195 are 5, 7, 13 and 29. 
+ *
+ * The prime factors of 13195 are 5, 7, 13 and 29.
  * What is the largest prime factor of the number 600851475143 ?
  *
  * Answer: 6857
@@ -16,13 +16,13 @@ long int pfact(long long int n) {
       temp = i;
       n /= i;
       i = 1;
-    }    
+    }
   }
   return temp;
 }
 
 int main(void) {
-  printf("%li\n", pfact(600851475143)); 
+  printf("%li\n", pfact(600851475143));
   return 0;
 }
 

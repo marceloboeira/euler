@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 int fb(int n){
-  if ((n == 1) || (n == 2)) 
+  if ((n == 1) || (n == 2))
     return 1;
 
   return fb(n - 1) + fb(n - 2);
@@ -24,6 +24,6 @@ int main(void) {
     t = fb(i);
     r += ((t % 2) == 0) ? t : 0;
   }
-  printf("%li\n",r);    
+  printf("%li\n",r);
   return 0;
 }

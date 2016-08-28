@@ -9,7 +9,7 @@
  */
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 // Test Palindromic on Base 10
 short int isp(int n){

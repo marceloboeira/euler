@@ -13,7 +13,7 @@ int main(void) {
   bool l = 0;
   long int j = 0,i = 0;
   while (!l) {
-    i += 20;      
+    i += 20;
     l = 1;
     j = 2;
     while ((j <= 20) && (l)) {

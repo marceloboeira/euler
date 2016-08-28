@@ -17,12 +17,12 @@ int main(void) {
   bool d = 0;
   for (c = 335; c <= e; c++)
     for (b = 1; b < c; b++)
-      for (a = 1; a < b; a++) {              
+      for (a = 1; a < b; a++) {
         d = ((a + b + c) == 1000) && ((a*a) + (b*b) == (c*c));
-        if (d) { 
+        if (d) {
           printf ("%i\n", a * b * c);
           return 0;
-        } 
+        }
       }
 }
 
