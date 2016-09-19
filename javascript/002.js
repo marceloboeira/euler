@@ -14,9 +14,9 @@ var a = 0,
 
 while (a <= limit) {
 	if (a % 2 == 0) {
-		result += a;		
+		result += a;
 	}
-	
+
 	temp = a;
 	a = b;
 	b = temp + b;

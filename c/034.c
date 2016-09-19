@@ -9,13 +9,13 @@
  */
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 int fct(int n) {
   int i = 0, m = n;
   if (n == 0)
     return 1;
-  for ( i = 1; i < n; i++) 
+  for ( i = 1; i < n; i++)
     m *= i;
   return m;
 }
@@ -29,7 +29,7 @@ int main(void) {
       n /= 10;
       s += fct(d);
     }
-    r += (s == i) ? i : 0; 
+    r += (s == i) ? i : 0;
   }
   printf("%i\n", r);
   return 0;
