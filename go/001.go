@@ -11,13 +11,13 @@ package main
 import "fmt"
 
 func main() {
-	var result int = 0
+  var result int = 0
 
-	for n := 1; n < 1000; n++ {
-		if (n % 3 == 0) || (n % 5 == 0) {
-			result += n
-		}
-	}
+  for n := 1; n < 1000; n++ {
+    if (n % 3 == 0) || (n % 5 == 0) {
+      result += n
+    }
+  }
 
   fmt.Println(result)
 }
