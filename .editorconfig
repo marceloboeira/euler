@@ -10,5 +10,5 @@ insert_final_newline = true
 indent_style = spaces
 tab_width = 2
 
-[{*.{rb,c,js,py}]
+[{*.{rb,c,js,py,go}]
 indent_size = 2
