@@ -9,11 +9,14 @@
         <Filename Value="ProjectEulerChallenge001.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="33" Y="10"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="21"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
       </Unit0>
     </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>
