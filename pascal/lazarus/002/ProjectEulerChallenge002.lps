@@ -6,10 +6,10 @@
     <BuildModes Active="Default"/>
     <Units Count="1">
       <Unit0>
-        <Filename Value="ProjectEulerChallenge001.lpr"/>
+        <Filename Value="ProjectEulerChallenge002.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="15" Y="13"/>
+        <CursorPos X="33" Y="10"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
