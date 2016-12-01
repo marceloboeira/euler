@@ -6,10 +6,10 @@
  # Answer: 6857
 
 n = 600851475143
+largest_prime = 2
 
 for i in range(2, n):
-    if n <= 1: break
-    elif n % i == 0:
+    if n % i == 0:
         largest_prime, n = i, n / i
 
 print(largest_prime)
