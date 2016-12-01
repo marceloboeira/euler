@@ -19,7 +19,7 @@ begin
 
   for i := 3 to limit - 1 do
     if (i mod 3 = 0) or (i mod 5 = 0) then
-       sum := sum + i ;
+      sum := sum + i;
 
   writeln('Answer: ', sum);
 
