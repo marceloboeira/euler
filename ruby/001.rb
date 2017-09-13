@@ -6,8 +6,4 @@
 #
 # Answer: 233168
 
-s = 0
-1000.times do |n|
-  s += n if (n % 3 == 0 || n % 5 == 0)
-end
-puts s
+puts (0..1000).select { |n| (n % 3 == 0 || n % 5 == 0) }.reduce(0, :+)
