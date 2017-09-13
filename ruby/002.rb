@@ -8,18 +8,15 @@
 # Answer: 4613732
 
 def fibonacci(n)
-  ((n == 1) || (n == 2)) ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+  (n == 1) || (n == 2) ? 1 : fibonacci(n - 1) + fibonacci(n - 2)
 end
 
 def even?(n)
   (n % 2) == 0
 end
 
-i, r, t, = 2, 0, 0;
-while (r <= 4000000) do
-  i += 1
-  t = fibonacci(i)
-  r += even?(t) ? t : 0
-end
+# fibonacci of 34 is bigger than 4M
+puts (1..33).map(&method(:fibonacci))
+            .select(&method(:even?))
+            .reduce(0, :+)
 
-p r
