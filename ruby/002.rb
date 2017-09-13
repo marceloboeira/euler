@@ -19,4 +19,3 @@ end
 puts (1..33).map(&method(:fibonacci))
             .select(&method(:even?))
             .reduce(0, :+)
-
