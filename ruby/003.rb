@@ -9,9 +9,9 @@ i, t, n = 2, 0, 600851475143
 while (i <= n)
   i += 1
   if n % i == 0
-    t = i;
-    n /= i;
-    i = 1;
+    t = i
+    n /= i
+    i = 1
   end
 end
 p t
