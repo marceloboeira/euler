@@ -7,15 +7,19 @@
 #
 # Answer: 4613732
 
-def fb(n)
-  ((n == 1) || (n == 2)) ? 1 : fb(n - 1) + fb(n - 2);
+def fibonacci(n)
+  ((n == 1) || (n == 2)) ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+end
+
+def even?(n)
+  (n % 2) == 0
 end
 
 i, r, t, = 2, 0, 0;
 while (r <= 4000000) do
   i += 1
-  t = fb(i)
-  r += ((t % 2) == 0) ? t : 0
+  t = fibonacci(i)
+  r += even?(t) ? t : 0
 end
 
 p r
