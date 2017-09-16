@@ -10,4 +10,4 @@
 
 fibonacci (n) = if (n == 1) || (n == 2) then 1 else fibonacci(n - 1) + fibonacci(n - 2)
 
-main = do print(foldl (+) 0 (filter (even) (map fibonacci [1..33])))
+main = do print(sum(takeWhile(< 4000000) [fibonacci x | x <- [1..35], even (fibonacci x)]))
