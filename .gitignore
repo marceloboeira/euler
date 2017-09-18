@@ -1,2 +1,2 @@
-haskell/*.hi
-haskell/*.o
+haskell/*
+!haskell/*.hs
