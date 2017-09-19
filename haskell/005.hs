@@ -9,4 +9,4 @@
 
 divisable x = all(==True) [ mod x y == 0 | y <- [1..20] ]
 
-main = do print(take 1 [x | x <- [200000000..999999999], divisable x ])
+main = do print(take 1 [x | x <- [200000000..], divisable x ])

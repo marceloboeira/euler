@@ -11,4 +11,4 @@
 prime x = all(==False) [ mod x y == 0 | y <- [2..(x-1)] ]
 
 -- 10002 because the prime function checks from 2 and so on...
-main = do print(last (take 10002 [x | x <- [1..20000000], prime x ]))
+main = do print(last (take 10002 [x | x <- [1..], prime x ]))
