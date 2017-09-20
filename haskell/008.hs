@@ -34,7 +34,7 @@ import Data.List
 main = do
   input <- readFile "008.data"
   print .
-    maximum . 
-      map (\x -> foldl (*) 1 x) .
+    maximum .
+      map (\x -> product x) .
         transpose . take 13 . tails .
           map (fromIntegral . digitToInt) . concat . lines $ input
