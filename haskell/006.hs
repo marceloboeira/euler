@@ -14,4 +14,4 @@
 -- Answer: 25164150
 --
 
-main = do print(((sum [ x | x <- [0..100] ])^2) - (sum [ x^2 | x <- [0..100] ]))
+main = do print $ ((^2) . sum) [ x | x <- [0..100] ] - sum [ x^2 | x <- [0..100] ]
