@@ -7,6 +7,7 @@
 -- Answer: 232792560
 --
 
+divisable :: Int -> Bool
 divisable x = all(==True) [ mod x y == 0 | y <- [1..20] ]
 
 main = do print(take 1 [x | x <- [200000000..], divisable x ])

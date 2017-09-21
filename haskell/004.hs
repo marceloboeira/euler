@@ -8,7 +8,10 @@
 -- Answer: 906609
 --
 
+reverse' :: Int -> Int -> Int
 reverse' x y = if x == 0 then y else reverse' (div x 10) (y * 10 + mod x 10)
+
+palindrome :: Int -> Bool
 palindrome x = (reverse' x 0) == x
 
 main = do print(maximum [ z | x <- [100..999], y <- [100..999], let z = x * y, palindrome z ])
