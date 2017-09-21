@@ -7,6 +7,6 @@
 -- Answer: 6857
 --
 
-prime x = all(==False) [ mod x y == 0 | y <- [2..(x-1)] ]
+import Euler (prime)
 
-main = do print(maximum [x | x <- [1..10000], mod 600851475143 x == 0, prime x ])
+main = do print(maximum [x | x <- [1..10000], mod 600851475143 x == 0, prime x])
