@@ -8,6 +8,6 @@
 -- Answer: 104743
 --
 
-import Euler (prime)
+import Euler (primes)
 
-main = do print(last (take 10001 [x | x <- [1..], prime x ]))
+main = do print(last (take 10001 primes))
