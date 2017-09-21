@@ -1,3 +1,6 @@
 haskell/*
 !haskell/*.hs
 !haskell/*.data
+
+c/*
+!c/*.c
