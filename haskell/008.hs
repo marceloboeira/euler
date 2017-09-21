@@ -35,6 +35,6 @@ main = do
   input <- readFile "008.data"
   print .
     maximum .
-      map (\x -> product x) .
+      map (product) .
         transpose . take 13 . tails .
           map (fromIntegral . digitToInt) . concat . lines $ input
