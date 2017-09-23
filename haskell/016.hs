@@ -7,9 +7,6 @@
 --
 -- Answer: 1366
 --
-
-digits' :: Integral x => x -> [x]
-digits' 0 = []
-digits' x = digits' (x `div` 10) ++ [x `mod` 10]
+import Euler(digits')
 
 main = do print . sum $ digits' $ 2^1000

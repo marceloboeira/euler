@@ -8,9 +8,7 @@
 --
 -- Answer: 137846528820
 --
-
--- Type definition does not work well here for some reason
-factorial n = product [1..n]
+import Euler(factorial)
 
 -- https://en.wikipedia.org/wiki/Pascal's_triangle
 -- permutations = (2n)! / (n!)^2
