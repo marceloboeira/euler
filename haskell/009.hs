@@ -13,4 +13,4 @@
 valid :: Int -> Int -> Int -> Bool
 valid a b c = (a + b + c == 1000) && (a^2 + b^2 == c^2)
 
-main = do print . product . head $ [ [a,b,c] | a <- [1..1000], b <- [1..1000], c <- [1..1000], valid a b c]
+main = do print . product . head $ [ [a, b, c] | a <- [1..1000], b <- [1..1000], c <- [1..1000], valid a b c]
